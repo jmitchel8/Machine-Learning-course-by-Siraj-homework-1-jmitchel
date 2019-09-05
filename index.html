@@ -1,0 +1,32 @@
+<<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <h1 id='title'> <font color="red">Transfer Learning Image Classifier </font></h1>
+
+      <script>
+      document.getElementById('title').style.font = "bold 36px arial";
+      document.getElementById('console').style.color = "blue";
+      </script>
+    <h1>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+  </div>
+  <div id="video">
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+  </div>
+  <div id="buttons">
+    <button id="class-a">Add A</button>
+    <button id="class-b">Add B</button>
+    <button id="class-c">Add C</button>
+    <button id="class-d">No Action</button>
+
+
+        <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
